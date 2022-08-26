@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(200, 200, 255, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+}
+
+.server {
+    height: min-content;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    width: 15rem;
+    margin: 1rem;
+}
+
+.server_name{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-weight: bold;
+}
+
+.server_status {
+    display: flex;
+    align-items: center;
+}
+
+.server_status_label {
+    flex: 0 0 60%;
+    font-weight: bold;
+}
+
+.server_status_value {
+    text-align: right;
+    flex: 0 0 40%;
+    overflow: hidden;
+}
+
+.server_item {
+    padding: 0.2rem 0;
+    border-top: 1px solid lightgray;
+}
+
+.server_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.server_button {
+    font-size: 1rem;
+    transition-duration: 0.2s;
+    border-radius: 5px;
+}
+
+.red_button {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+
+.red_button:hover {
+    background-color: white;
+    color: red;
+}
+
+.green_button {
+    border: 1px solid limegreen;
+    background-color: limegreen;
+    color: white;
+}
+
+.green_button:hover {
+    background-color: white;
+    color: limegreen;
+}
+
+.server_user_input {
+    border: 1px solid black;
+    padding: 0.3rem;
+}
+
+.server_user_inputs {
+    display: flex;
+}
+
+.server_user_input {
+    min-width: 40%;
+    flex: 1 1;
+}
+
+.server_user_button {
+    width: 1.5rem;
+    margin-left: 5px;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(235, 235, 235, 1);
+}
+
+.username {
+    min-width: 40%;
+    flex: 1 1;
+    font-size: 1rem;
+
+}
